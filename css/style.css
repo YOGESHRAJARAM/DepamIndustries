@@ -4,6 +4,9 @@
   
   }
   /* navigation page */
+  header{
+    margin-top: 5px;
+  }
   .navbarcontain{
     background-color: rgba(0, 51, 52, 1);
     padding:3px 40px;
@@ -43,6 +46,7 @@
   .hero_layout1{
     background-color: rgba(0, 255, 255, 0);
   }
+
   .hero_layout1_sm{
      display: flex;
      flex-direction: column;
@@ -53,6 +57,7 @@
   .hero_layout1 h1{
     font-weight: 900;
     font-style: normal;
+    font-size: 3.5rem;
   }
   .hero_layout1_sm h1{
     font-weight: 900;
@@ -73,6 +78,7 @@
     border: solid 1px rgba(0, 51, 52, 1);
     padding: 10px 30px;
     border-radius: 20px;
+    margin-top: 20px;
   }
   .hero_layout1_booking_buttton_sm{
     background-color: transparent;
@@ -89,6 +95,7 @@
     justify-content: center;
     align-items: center;
   }
+  
   
 
   /* herosection ends*/
@@ -154,6 +161,9 @@
 
   @media only screen and (max-width: 990px) {
      /* navigation page */
+     header{
+      margin-top: 5px;
+    }
     .navbarcontain{
         background-color:rgb(143, 205, 143);
         border: none;
