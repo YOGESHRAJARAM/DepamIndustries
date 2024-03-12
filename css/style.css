@@ -1,0 +1,123 @@
+  body{
+    font-family: "Roboto", sans-serif;
+  
+  }
+  /* navigation page */
+  .navbarcontain{
+    background-color: rgba(0, 51, 52, 1);
+    padding:3px 40px;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    gap: 30px;
+    
+  }
+
+  .navbaritermactivate{
+    background-color: rgb(255, 255, 255);
+    width: 130%;
+    border-radius: 17px;
+    padding: 7px 15px;
+    text-align: center;
+  }
+  .navbarhandle{
+    background-color: aqua;
+  }
+  .logoimg{
+    background-color: rgba(127, 255, 212, 0);
+   
+  }
+
+  /* navigation page */
+   
+  /* herosection  start*/
+  .herosection{
+    margin-top: 20px;
+
+  }
+  .herosection_sm{
+    margin-top: 0px;
+  }
+
+  .hero_layout1{
+    background-color: rgba(0, 255, 255, 0);
+  }
+  .hero_layout1_sm{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+  }
+  .hero_layout1 h1{
+    font-weight: 900;
+    font-style: normal;
+  }
+  .hero_layout1_sm h1{
+    font-weight: 900;
+    font-style: normal;
+  }
+  .hero_layout1 h3{
+    margin-top: 20px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .hero_layout1_sm h3{
+    margin-top: 10px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .hero_layout1_booking_buttton{
+    background-color: transparent;
+    border: solid 1px rgba(0, 51, 52, 1);
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+  .hero_layout1_booking_buttton_sm{
+    background-color: transparent;
+    border: solid 1px rgba(0, 51, 52, 1);
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .hero_layout2{
+    background-color: rgba(0, 255, 68, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  /* herosection ends*/
+
+
+  @media only screen and (max-width: 720px){
+
+  }
+
+
+  @media only screen and (max-width: 990px) {
+     /* navigation page */
+    .navbarcontain{
+        background-color:rgb(143, 205, 143);
+        border: none;
+        border-radius: 0;
+    }
+    .navbaritermactivate{
+        background-color:transparent;
+        border: none;
+        width: 0%;
+        padding: 10px 0px;
+    }
+      /* navigation page */
+
+        /* herosection  starts*/
+
+      .herosection{
+        margin-top: 0px;
+    
+      }
+
+  }
