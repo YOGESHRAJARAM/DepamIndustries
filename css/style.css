@@ -155,7 +155,77 @@
 
  }
   /* section2 ends*/
+  /* section3 start*/
+ .section3{
+  padding-top: 60px;
+  padding-bottom:60px;
+  padding-left: 30px;
+  background-color:rgba(0, 51, 52, 1) ;
+  margin-top: 40px;
+ }
+ .section3_layer1_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .section3_layer1_1 h3{
+  color: white;
+  
+ }
+ .section3_layer1_1 p{
+  color: white;
+  text-align: justify;
+ }
+ .section3_layer2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+ }
 
+  /* section3 ends*/
+  
+  /* section4 start*/
+
+  .section4 h3{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+  .section4_grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10%;
+    column-gap: 10%;
+    
+  }
+  .grid-item{
+    border: solid 2px black;
+    padding: 10% 10%;
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-item p{
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  
+  
+  
+  /* section4 ends*/
  
   /* ---------------------------------------------990px----------------------------- */
 
@@ -235,9 +305,31 @@
        font-size: 1rem;
       }
         /* section2 end*/
+        /* section3 start*/
+        .section3{
+          padding-top: 80px;
+          padding-bottom:80px;
+          padding-left: 20px;
+          background-color:rgba(0, 51, 52, 1) ;
+          margin-top: 40px;
+         }
+        /* section3 ends*/
+         /* section4 start*/
+        .section4_grid_container{
+          display: grid;
+          grid-template-columns: auto auto ;
+          align-items: center;
+          justify-content: center;
+          row-gap: 10%;
+          column-gap: 10%;
+          
+        }
+     
+          /* section4 ends*/
   }
   /* ---------------------------------------------576px----------------------------- */
   @media only screen and (max-width: 576px){
+     /* section2 start*/
     .section2{
       background-image: url('../assert/background.png') ;
       width: 100%;
@@ -292,4 +384,38 @@
       font-size: 0.6rem;
       text-align: center;
     }
+     /* section2 end*/
+        /* section3 start*/
+        /* section3 ends*/
+      /* section4 start*/
+
+      .section4 h3{
+        text-align: center;
+        padding: 20px;
+      }
+      .section4_grid_container{
+        display: grid;
+        grid-template-columns: auto ;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1%;
+        
+      }
+      .grid-item{
+        border: solid 1px black;
+        padding: 20px 80px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        
+      }
+      .grid-item p{
+       text-align: center;
+      }
+    
+      
+      /* section4 ends*/
   }
