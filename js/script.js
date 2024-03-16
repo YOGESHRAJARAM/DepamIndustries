@@ -1,4 +1,27 @@
 
+// navigation bar start
+
+const navLinkEls = document.querySelectorAll('.nav-link');
+const sectionEls = document.querySelectorAll('section')
+
+let currentsection = 'Home';
+window.addEventListener('scroll',()=>{
+      sectionEls.forEach(sectionEl => {
+          if(window.scrollY >= (sectionEl.offsetTop - 200)){
+             currentsection = sectionEl.id;
+          }
+      });
+ navLinkEls.forEach(navlinkel =>{
+      if(navlinkel.href.includes(currentsection)){
+            document.querySelector('.activemode').classList.remove('activemode')
+            navlinkel.classList.add('activemode');
+      }
+ });
+});
+
+// navigation bar end
+
+
 const HerosectionDiv = document.getElementById("herosection_id_layout1");
 
 function updateDivecontend(){
@@ -16,7 +39,7 @@ function updateDivecontend(){
                               <img class="img-fluid"style="width:70%; margin-top:20px;" src="assert/Group 14279.png">
                               </div>
                         </div>
-                        <div class="col-12 col-lg-6 hero_layout2">
+                        <div class="col-12 col-lg-6 hero_layout2" >
                               <img class="img-fluid" src="assert/illustration.png" alt="">
                         </div>
                   </div>
