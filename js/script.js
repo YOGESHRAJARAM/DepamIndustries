@@ -21,6 +21,15 @@ window.addEventListener('scroll',()=>{
 
 // navigation bar end
 
+function contactformclose(){
+      const contactform = document.getElementById('whatsappform')
+      contactform.style.setProperty('visibility',' hidden');
+}
+function bookingbutton(){
+      const contactform = document.getElementById('whatsappform')
+      contactform.style.setProperty('visibility','visible');
+}
+
 
 const HerosectionDiv = document.getElementById("herosection_id_layout1");
 
@@ -34,9 +43,11 @@ function updateDivecontend(){
                               <h1>Your Fence, Your Peace  of Mind </h1>
                               <h3>Bring Your Dream In Life</h3>
                               <p style="margin-bottom: 10px; max-width:550px; margin-top: 20px;">Deepam Industries offers a wide variety of fencing solutions to meet the needs of contractors, businesses, homeowners, and more </p>
-                              <button class="hero_layout1_booking_buttton_sm">Book Now</button>
-                              <div>
-                              <img class="img-fluid"style="width:70%; margin-top:20px;" src="assert/Group 14279.png">
+                              <button onclick="bookingbutton()" class="hero_layout1_booking_buttton_sm ">Book Now</button>
+                              <div class="customerreviewsvg">
+                              <a href="https://www.google.com/search?q=deepam+industries+fencing+theni&sca_esv=5d2091cbd4f7042a&rlz=1C1CHBF_en-GBIN1102&sxsrf=ACQVn09koRhELuqgdc8OCbhgRzh-HmaA0g%3A1710854889877&ei=6ZL5ZZaJNaOyvr0Pgam6uA8&oq=deepam+industries+fenci&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2RlZXBhbSBpbmR1c3RyaWVzIGZlbmNpKgIIADIHECEYChigATIHECEYChigAUiqNlC4BlinKXACeACQAQCYAfIBoAG4EqoBBTAuMy44uAEByAEA-AEBmAIHoAK7DMICBRAhGKABwgIEECMYJ8ICChAjGIAEGIoFGCfCAgUQABiABMICBhAAGBYYHsICAhAmwgIFECEYnwXCAgQQIRgVmAMAiAYBkgcDMi03oAeRNA&sclient=gws-wiz-serp" target="_blank">
+                              <img class="img-fluid"style="width:70%; margin-top:20px;" src="assert/Group 14281.svg">
+                              </a>
                               </div>
                         </div>
                         <div class="col-12 col-lg-6 hero_layout2" >
@@ -54,9 +65,11 @@ function updateDivecontend(){
                   <h3>Bring Your Dream In Life</h3>
                   <p style="margin-bottom: -5px; margin-top: 20px;">Deepam Industries offers a wide variety of fencing solutions to meet </p>
                   <p style="margin-top: -5px;">the needs of contractors, businesses, homeowners, and more</p>
-                  <button class="hero_layout1_booking_buttton">Book Now</button>
-                  <div>
-                        <img class="img-fluid" src="assert/Group 14279.png">
+                  <button onclick="bookingbutton()" class="hero_layout1_booking_buttton">Book Now</button>
+                  <div class="customerreviewsvg">
+                  <a href="https://www.google.com/search?q=deepam+industries+fencing+theni&sca_esv=5d2091cbd4f7042a&rlz=1C1CHBF_en-GBIN1102&sxsrf=ACQVn09koRhELuqgdc8OCbhgRzh-HmaA0g%3A1710854889877&ei=6ZL5ZZaJNaOyvr0Pgam6uA8&oq=deepam+industries+fenci&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2RlZXBhbSBpbmR1c3RyaWVzIGZlbmNpKgIIADIHECEYChigATIHECEYChigAUiqNlC4BlinKXACeACQAQCYAfIBoAG4EqoBBTAuMy44uAEByAEA-AEBmAIHoAK7DMICBRAhGKABwgIEECMYJ8ICChAjGIAEGIoFGCfCAgUQABiABMICBhAAGBYYHsICAhAmwgIFECEYnwXCAgQQIRgVmAMAiAYBkgcDMi03oAeRNA&sclient=gws-wiz-serp" target="_blank">
+                        <img class="img-fluid" src="assert/Group 14281.svg">
+                  </a>
                   </div>
                   </div>
                   <div class="col-12 col-lg-6 hero_layout2" id="animContainer">
@@ -106,5 +119,19 @@ var animation = bodymovin.loadAnimation({
       loop: true,
       autoplay: true,
       path: 'jobdone.json' // lottie file path
+    })
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('contactanimation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'contact.json' // lottie file path
+    })
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('hourssupport'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'hours.json' // lottie file path
     })
     

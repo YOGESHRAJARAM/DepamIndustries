@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- header page start-->
-    <header  >
+    <header >
         <nav class="navbar  navbar-expand-lg navbarheader">
               <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                            <a class="nav-link activemode " aria-current="page" href="#Home">Home</a>
                         </li>
                         <li class="nav-item ">
-                           <a class="nav-link " aria-current="page" href="#AboutUs">AboutUs</a>
+                           <a class="nav-link " aria-current="page" href="#AboutUs">About Us</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link " aria-current="page" href="#Ourservices">Our Services</a>
@@ -44,6 +44,7 @@
     </header>
     <!-- header page start-->
     <main>
+   
         <!-- page 1 hero section start -->
         <section id="Home">
           <div class="container-fluid container-lg p-2 herosection"  id="herosection_id_layout1" >
@@ -54,9 +55,11 @@
                       <h3>Bring Your Dream In Life</h3>
                       <p style="margin-bottom: -5px; margin-top: 20px;">Deepam Industries offers a wide variety of fencing solutions to meet </p>
                       <p style="margin-top: -5px;">the needs of contractors, businesses, homeowners, and more</p>
-                      <button class="hero_layout1_booking_buttton">Book Now</button>
-                      <div>
-                        <img class="img-fluid" src="assert/Group 14279.png">
+                      <button onclick="bookingbutton()" class="hero_layout1_booking_buttton" >Book Now</button>
+                      <div class="customerreviewsvg">
+                        <a href="https://www.google.com/" target="_blank">
+                        <img class="img-fluid" src="assert/Group 14281.svg">
+                        </a>
                       </div>
                   </div>
                   <div class="col-12 col-lg-6 hero_layout2 " id="animContainer">
@@ -64,6 +67,35 @@
                   </div>
               </div>
           </div>
+          <div class="contactformdiv" id="whatsappform">
+            <div style="display: flex;align-items: end; justify-content: end;  font-size: 30px;margin-top: 10px ; margin-right: 10px;" class="formclose-btn"><i onclick="contactformclose()" class="fa fa-window-close" aria-hidden="true"></i></div>
+            <!-- <form class="contactform" action="">
+              <div id="contactanimation"></div>
+              <label for="fname">Name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="lname">Message</label><br>
+              <textarea type="" id="lname" name="lname" ></textarea><br>
+              <input id="submitbutton" type="submit" value="Submit">
+            </form>  -->
+            <form class="contactform" action="https://api.web3forms.com/submit" method="POST">
+              <div class="row">
+                 <div class="col-12 col-lg" style="display: flex; justify-content: center;align-items: center;">
+                     <div  id="contactanimation"></div>
+                 </div>
+                 <div class="col-12 col-lg" style="background-color:#003334; padding: 20px; border-radius: 10px; box-shadow: 1px 0px 26px -4px rgba(0,0,0,0.75);"> 
+                     <h3 style="text-align: center; color: white;">Contact Us</h3> 
+                     <p style="text-align: center; color: white; font-weight: 300; font-size: 0.7rem;">Drop us a line through the form below and we'll get back to you</p>        
+                    <input type="hidden" name="access_key" value="38ee5140-3e7c-41ae-a684-661c61e53321">
+                    <input type="text" id="fname" name="name" placeholder="Name" required>
+                    <input type="email" id="fname" name="email" placeholder="Email" required>
+                    <input type="tel" id="fname" name="phone" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                    <textarea id="fname" name="message" required placeholder="Say Hi !"></textarea>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button  id="submitbutton" type="submit">Submit Form</button>
+                 </div>
+               </div>
+          </form>
+        </div>
         </section>  
         <!-- page 1 hero section end -->
         <!-- page 2 experiance section start -->
@@ -71,22 +103,22 @@
         <div class="container-fluid container-lg ">
           <div class="section2">
                   <div class="section2layer1">
-                        <h2>We are <span>Experts</span>in the world of</h2>
-                        <h2><span>Solar and Normal Fencing</span></h2>
+                        <h2>We Are The <span>Experts </span>In  All </h2>
+                        <h2><span>Type's of Fencing Solutions</span></h2>
                         <h3>Always tends to give you the best experience</h3>
                   </div>
                   <div class="section2layer2">
                        <div class="section2layer2_1">
                            <p class="yearofexperience">03+</p>
-                           <p class="section2sub">years of experience</p>
+                           <p class="section2sub">Years of Experience</p>
                        </div>
                        <div class="section2layer2_2">
                             <p class="Projectsinlaunch">500+</p>
-                            <p class="section2sub">Projects in launch</p>
+                            <p class="section2sub">Projects which Launched</p>
                        </div>
                        <div class="section2layer2_3">
                             <p class="satisfiedcustomer">1K+</p>
-                            <p class="section2sub">Satisfied customer</p>
+                            <p class="section2sub">Satisfied Customer</p>
                        </div>
                   </div>
            </div>
@@ -114,53 +146,86 @@
         <section id="Ourservices">
         <div  class="container section4">
             <h3>Our Services</h3>
+            <P style="text-align: center; margin-bottom: 50px;">Quality is Our success</P>
             <div class="section4_grid_container">
                 <div class="grid-item">
+                  <a style="text-decoration: none;" href="solarpanels.html">
                     <img class=" " src="./assert/solar-panel 1.png">
                     <div style="text-align: center;">
                       <p>Solar panels</p>
                     </div>
+                  </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" id="fencedesign">
+                  <a style="text-decoration: none;" href="https://www.youtube.com/">
                   <img class="" src="./assert/Group.png">
                   <div  style="text-align: center; ">
-                    <p style="padding: 10px;">Fencing</p> 
+                    <p style="margin-top: 20px;">Fencing</p> 
                   </div>
+                </a>
                 </div>
                 <div class="grid-item">
+                  <a style="text-decoration: none;" href="https://www.youtube.com/">
                   <img class=" " src="./assert/light.png">
-                  <p>Solar Light</p>
-                  <p>System</p>
+                   <div  style="text-align: center; ">
+                     <p style="margin-top: 20px;">Solar Light</p>
+                     <p>System</p>
+                   </div>
+                  </a>
                 </div>
                 <div class="grid-item">
-                  <img class=" " src="./assert/electric-fence 1.png">
-                  <p>Electric</p>
-                  <p>Fencing </p>
+                  <a style="text-decoration: none;" href="https://www.youtube.com/">
+                    <img class=" " src="./assert/electric-fence 1.png">
+                    <div  style="text-align: center; ">
+                      <p style="margin-top: 20px;">Electric</p>
+                      <p>Fencing </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item"  id="hourssupport">
+                  <!-- <a style="text-decoration: none;" href="https://www.youtube.com/">
+                    <img class="" src="./assert/solar-energy.png">
+                      <div  style="text-align: center; ">
+                        <p style="margin-top: 20px;">All the Solar</p>
+                        <p>Accessories</p>
+                      </div>
+                  </a> -->
                 </div>
                 <div class="grid-item">
-                  <img class="" src="./assert/solar-energy.png">
-                  <p>All the Solar</p>
-                  <p>Accessories</p>
+                  <a style="text-decoration: none;" href="https://www.youtube.com/">
+                      <img class=" " src="./assert/solar-house.png">
+                      <div  style="text-align: center; ">
+                        <p style="margin-top: 20px;">Solar Home </p>
+                        <p>Ups System</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="grid-item">
-                  <img class=" " src="./assert/solar-house.png">
-                  <p>Solar Home </p>
-                  <p>Ups System</p>
+                  <a style="text-decoration: none;" href="https://www.youtube.com/">
+                    <img class="" src="./assert/battery.png">
+                    <div  style="text-align: center; ">
+                      <p style="margin-top: 20px;">Solar</p>
+                      <p>Batteries</p>
+                    </div>
+                  </a>
                 </div>
-                <div class="grid-item">
-                  <img class="" src="./assert/battery.png">
-                  <p>Solar</p>
-                  <p>Batteries</p>
-                </div>
-                <div class="grid-item">
-                  <img class=" " src="./assert/shed (1).png">
-                  <p>Agri and car</p>
-                  <p>shed</p>
+                <div class="grid-item" id="fencedesign">
+                  <a style="text-decoration: none;" href="https://www.youtube.com/">
+                    <img class=" " src="./assert/shed (1).png">
+                    <div  style="text-align: center; ">
+                      <p  style="margin-top: 20px;">Agri and car</p>
+                      <p>shed</p>
+                    </div>
+                  </a>
                 </div>
                 <div class="grid-item ">
-                  <img class=" " src="./assert/gate.png">
-                  <p>Quality</p>
-                  <p>Gate's</p>
+                  <a style="text-decoration: none;" href="https://www.youtube.com/">
+                    <img class=" " src="./assert/gate.png">
+                    <div  style="text-align: center; ">
+                      <p style="margin-top: 20px;">Quality</p>
+                      <p>Gate's</p>
+                    </div>
+                  </a>
                 </div>   
             </div>
         </div>
@@ -379,6 +444,8 @@
   <script src="js/bootstrap.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>  
   <script src="js/script.js"></script>
-  
+
+
+
 </body>
 </html>
