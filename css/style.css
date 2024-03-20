@@ -1,7 +1,28 @@
   body{
     font-family: "Roboto", sans-serif;
   }
-
+  #loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: Semi-transparent background */
+    z-index: 999; /* Ensure the loader is on top of other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #loader img {
+    width: 200px;
+    animation: spin 2s linear infinite; /* Add animation for a spinning effect (optional) */
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 
   /* navigation page */
   header{
@@ -17,14 +38,16 @@
     margin: 10px;
     display: flex;
     gap: 30px;
-    border: solid 1px  rgba(210, 255, 7, 1) ;
+ 
   }
 
   .logoimg{
     background-color: rgba(97, 165, 142, 0);
     position: absolute;
-    top: 2%;
-    left: 6vw;
+    top: 4%;
+    left: 7vw;
+    width: 100px;
+   
   }
 
   .nav-link{
@@ -47,6 +70,22 @@
    
      
   }
+  .logoherobanner{
+      background-color: #003334;
+      padding: 10px 15px;
+      border-radius: 10px;
+      width: fit-content;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.418);
+      :hover{
+        opacity: 0.7;
+      }
+  }
+  .logoherobanner-sm{
+      background-color: #003334;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
   #fname{
     
     padding: 10px 12px;
@@ -61,7 +100,7 @@
     border: 1px solid #ced4da;
     appearance: none;
     border-radius: 5px;
-    font-weight: 300;
+    font-weight: 500;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     :focus{
         color: #212529;
@@ -99,7 +138,7 @@
   }
   
   .contactformdiv{
-    position: absolute;
+    position: fixed;
     background-color: rgb(255, 255, 255);
     top: 50%;
     left: 50%;
@@ -108,10 +147,12 @@
     visibility: hidden;
     box-shadow: 1px 0px 26px -4px rgba(0,0,0,0.75);
     z-index: 2000;
+   
    }
    #contactanimation{
     width: 100%;
  
+    
   
    }
 
@@ -121,6 +162,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+ 
    }
 
   .herosection_sm{
@@ -161,7 +203,7 @@
     background-color: transparent;
     border: solid 1px rgba(0, 51, 52, 1);
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -187,9 +229,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    padding: 30px;
-    
   }
   .customerreviewsvg :hover{
      background-color:rgba(210, 255, 7, 1);
@@ -199,7 +238,7 @@
   .customerreviewsvg:active{
     opacity: 0.6;
   }
-  
+
   
 
   /* herosection ends*/
@@ -345,8 +384,8 @@
   .grid-item p{
     margin: 0px;
     font-size: 1rem;
-    font-weight: 400;
-    color: black;
+    font-weight: 700;
+    color: #003334;
   }
   
   /* section4 ends*/
@@ -419,6 +458,7 @@
   }
   .section6_ourclientslider img{
      margin: 20px;
+ 
   }
    /* section6 End*/
    
@@ -480,24 +520,26 @@
     background-color: transparent;
     border: solid 1px rgba(0, 51, 52, 1);
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 40px;
    }
+   .section8_button button:hover{
+    background-color: #003334;
+    color: white;
+  }
+  .section8_button button:active{
+    opacity: 0.8;
+  }
    /* section8 End*/
     /* section9 start*/
     .section9 h2{
       font-weight: 700;
       font-size: 3rem;
-      padding: 10px 0px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      background-color:rgba(0, 51, 52, 1);
-      color: white;
-      border-radius: 20px;
     }
     .section9{
       padding-bottom:30px ;
+      margin-top: 20px;
     }
  
 
@@ -517,16 +559,15 @@
       width: 70px;
     }
     .navbarcontain{
-        background-color:rgb(143, 205, 143);
+        background-color:#003334;
         border: none;
         border-radius: 0;
     }
-    .navbaritermactivate{
-        background-color:transparent;
-        border: none;
-        width: 0%;
-        padding: 10px 0px;
+    .nav-link{
+      padding: 10px;
+      
     }
+   
       /* navigation page */
 
         /* herosection  starts*/
@@ -661,6 +702,16 @@
     
       display: none;
     }
+    #contactanimation{
+      width: 100%;
+      display: none;
+      
+    
+     }
+     .contactformdiv{
+ 
+      width: 350px;
+     }
     .section2{
 
       background-image: url('../assert/background.png') ;
@@ -755,5 +806,9 @@
     
       
       /* section4 ends*/
+      .section6_ourclientslider img{
+        margin: 20px;
+        width: 100px;
+     }
       
   }
