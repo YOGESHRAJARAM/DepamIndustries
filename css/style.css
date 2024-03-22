@@ -1,6 +1,8 @@
   body{
     font-family: "Roboto", sans-serif;
+    /* font-family: cooper; */
   }
+
   #loader {
     position: fixed;
     left: 0;
@@ -89,7 +91,7 @@
   #fname{
     
     padding: 10px 12px;
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -132,8 +134,39 @@
   /* navigation page */
    
   /* herosection  start*/
+  .companybanner_hero{
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     font-family: "Caprasimo", serif;
+     border: solid 2px #003334;
+     width: fit-content;
+     padding: 20px;
+     border-radius: 10px;
+    
+  }
+  .companybanner_hero h2{
+    font-size: 2rem;
+  }
+  .companybanner_hero_sm{
+    background-color: #86b6fe00;
+    font-family: "Caprasimo", serif;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #003334;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .companybanner_hero_sm h2{
+    font-size: 1.5rem;
+  }
+  .companybanner_hero_sm img{
+    width: 70px;
+  }
   .herosection{
-    margin-top: 20px;
+    margin-top: 5px;
     position: relative;
   }
   
@@ -179,25 +212,39 @@
      text-align: center;
      align-items: center;
      justify-content: center;
+
   }
+  .hero_layout1_sm p{
+    color: #000000;
+    text-align: center;
+    max-width: 350px;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 1rem;
+ }
+  #herosmpara{
+    background-color: #00333400;
+    
+  }
+
   .hero_layout1 h1{
     font-weight: 900;
-    font-style: normal;
+   
     font-size: 3.5rem;
   }
   .hero_layout1_sm h1{
     font-weight: 900;
-    font-style: normal;
+    font-size: 2.5rem;
   }
   .hero_layout1 h3{
     margin-top: 20px;
     font-weight: 500;
-    font-style: normal;
+  
   }
   .hero_layout1_sm h3{
     margin-top: 10px;
     font-weight: 500;
-    font-style: normal;
+   
   }
   .hero_layout1_booking_buttton{
     background-color: transparent;
@@ -224,17 +271,25 @@
     margin-bottom: 10px;
   }
   .hero_layout2{
-    background-color: rgba(44, 158, 74, 0);
+    position: absolute;
+    width: 850px;
+    left: 450px;
+    background-color: rgba(120, 196, 142, 0);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   
   }
-  .customerreviewsvg :hover{
-     background-color:rgba(210, 255, 7, 1);
+  .customerreviewsvg:hover{
+     background-color:rgba(210, 255, 7, 0);
      border-radius: 30px;
     
   }
+  .customerreviewsvg{
+      width: 100%;
+      overflow: hidden;
+ }
   .customerreviewsvg:active{
     opacity: 0.6;
   }
@@ -276,26 +331,33 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap:6%;
+   gap: 5rem;
    margin-top: 10%;
    padding: 30px 0px;
   }
   .yearofexperience{
      font-weight:900;
-     font-size: 5rem;
+     font-size: 5.5rem;
      text-align: center;
+    
   }
   .Projectsinlaunch{
     font-weight:900;
-    font-size: 5rem;
+    font-size: 5.5rem;
     text-align: center;
 
   }
  .satisfiedcustomer{
   font-weight:900;
-  font-size: 5rem;
+  font-size: 5.5rem;
   text-align: center;
 
+ }
+ .section2layer2_1{
+  padding: 0px auto;
+ }
+ .section2sub{
+   font-size: 1.5rem;
  }
   /* section2 ends*/
   /* section3 start*/
@@ -314,28 +376,70 @@
  .section3_layer1_1 h3{
   color: white;
   font-size: 3rem;
+  font-weight: 900;
  }
  .section3_layer1_1 p{
   color: white;
   text-align: justify;
-  font-weight: 300;
+  font-weight: 400;
  }
  .section3_layer2{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  overflow: hidden;
  }
-
+ .section3_layer2 img{
+  width: 700px;
+ }
   /* section3 ends*/
   
   /* section4 start*/
-  #fencedesign{
-    margin-left: 33px;
-  }
+ 
+ .Ourservicesclass{
+  box-shadow: 3px 2px 24px -6px rgba(0,0,0,0.75);
+  background-color: #ced4da44;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  border: solid 5px #003334;
+ }
+ .logosale{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
   #hourssupport{
-    width: 300px;
-    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    
+  }
+ 
+  .whydeepam h2{
+      font-weight: 700;
+      font-size: 3rem;
+      padding: 20px 0px;
+
+  }
+  .whydeepam p{
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+    
+  }
+  .whydeepam span{
+    font-weight: 700;
+  }
+  .whydeepam li{
+    padding: 5px 0px;
+
+    max-width: 400px;
+    font-size: 1rem;
+    text-align: justify;
   }
   .section4 h3{
     text-align: center;
@@ -358,36 +462,26 @@
     height: fit-content;
     margin-bottom: 170px;
   }
-  .grid-item{
-    background-color:	white;
-    box-shadow: -1px -1px 20px 9px rgba(0,0,0,0.24);
-    padding: 10% 10%;
-    border-radius: 20px;
-    width: 240px;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .grid-item:hover{
-    border-radius: 10px;
-    width: 240px;
-    height: 240px;
-    opacity: 0.8;
-    box-shadow: none;
-    border: solid 2px #003334;
-  }
 
-
-  .grid-item p{
-    margin: 0px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #003334;
-  }
+ .gridcard_title{
+  font-weight: 900;
+  font-size: 1.5rem;
+ }
+ 
+ #text_grid{
+  text-align: justify;
+ }
+ .btngrid{
+   color: #003334;
+   font-weight: 900;
+   border: solid 2px #003334;
   
+ }
+ .btngrid:hover{
+  background-color: #003334;
+  color: white;
+ }
+ 
   /* section4 ends*/
 
    /* section5 starts*/
@@ -399,32 +493,7 @@
       transform: translateX(-100%);
     }
    }
-   .section5_videoslider{
-     display: flex;
-     display: inline-block;
-     flex-direction: row;
-     animation: 60s slider infinite linear;
-   }
-   .section5_videoslider video{
-     margin: 5px;
-     margin-left: 20px;
-     background-color: rgba(240, 248, 255, 0);
-     border-radius: 20px;
- 
-   }
-   .section5{
-    white-space: nowrap;
-    overflow: hidden;
-    background-color:rgba(0, 51, 52, 1) ;
-    padding-top: 50px;
-    padding-bottom:30px ;
-   }
-   .section5 h3{
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    padding: 30px 0px;
-   }
+  
   
   /* section5 ends*/
 
@@ -442,6 +511,7 @@
     white-space: nowrap;
     overflow: hidden;
     padding-top: 20px;
+    padding-bottom: 20px;
    }
    .section6 h3{
     text-align: center;
@@ -540,12 +610,31 @@
     .section9{
       padding-bottom:30px ;
       margin-top: 20px;
+      
     }
+    
+  /* ---------------------------------------------1400px----------------------------- */
  
+    @media only screen and (max-width: 1400px){
+    
+      .hero_layout2{
+        position:unset;
+        width: 850px;
+        left: 450px;
+        background-color: rgba(120, 196, 142, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+      }
+  
+    }
 
   /* ---------------------------------------------990px----------------------------- */
 
   @media only screen and (max-width: 990px) {
+ 
      /* navigation page */
      header{
       margin-top: 5px;
@@ -654,16 +743,12 @@
           margin-bottom: 430px;
           
         }
-        #hourssupport{
-          grid-row: span 2;
-          background-color:rgba(210, 255, 7, 0.801) ;
+       
       
-         
-        }
-        #fencedesign{
-          margin-left: 0px;
-        }
-   
+        #text_grid{
+          text-align: justify;
+         }
+    
           /* section4 ends*/
 
          /* section7 starts*/
@@ -772,6 +857,48 @@
         /* section3 ends*/
       /* section4 start*/
 
+      .logosale{
+        display: none;
+      }
+      .Ourservicesclass{
+        box-shadow: unset;
+        background-color: #ffffff46;
+        padding: 30px;
+        border-radius: 20px;
+        border: none;
+        
+       }
+        #hourssupport{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 400px;
+          height: 400px;
+          
+        }
+       
+        .whydeepam h2{
+            font-weight: 700;
+            font-size: 2rem;
+            padding: 20px 0px;
+      
+        }
+        .whydeepam p{
+          font-weight: 400;
+          font-size: 1rem;
+          text-align: justify;
+          
+        }
+        .whydeepam span{
+          font-weight: 700;
+        }
+        .whydeepam li{
+          padding: 5px 0px;
+          text-align: left;
+          max-width: 400px;
+          font-size: 1rem;
+     
+        }
       .section4 h3{
         text-align: center;
         padding: 20px;
@@ -781,13 +908,13 @@
         grid-template-columns: auto ;
         align-items: center;
         justify-content: center;
-        row-gap: 1%;
-        margin-bottom: 220px;
+        row-gap: 0.1%;
+        margin-bottom: 100px;
         
       }
       .grid-item{
       
-        padding: 20px 80px;
+        padding: 10px 0px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -796,12 +923,7 @@
         width: 300px;
         
       }
-      .grid-item:hover{
-        width: 300px;
-      }
-      .grid-item p{
-       text-align: center;
-      }
+     
     
     
       
