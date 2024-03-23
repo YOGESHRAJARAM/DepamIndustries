@@ -154,10 +154,4 @@ var animation = bodymovin.loadAnimation({
     })
     
 const logoimg = document.querySelector('.logoimg')
-
-window.addEventListener("scroll", function() {
-      logoimg.style.setProperty('visibility','hidden');
-      
-    });
-
     AOS.init();

@@ -257,7 +257,7 @@
   .hero_layout1_booking_buttton:hover{
     background-color: #003334;
     color: white;
-    border: none;
+
   }
   .hero_layout1_booking_buttton:active{
     opacity: 0.8;
